@@ -16,7 +16,6 @@ group :assets do
   	gem 'coffee-rails', '~> 4.0.0'
 end
 
-gem 'sqlite3'
 gem 'sass-rails', '~> 4.0.0'
 gem 'bootstrap-sass', '~> 2.3.2.1'
 
