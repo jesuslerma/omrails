@@ -5,6 +5,7 @@ gem 'rails', '4.0.0'
 gem 'devise', '3.0.0.rc'
 gem 'protected_attributes'
 gem 'simple_form'
+gem "paperclip", "~> 3.0"
 # Use sqlite3 as the database for Active Record
 group :production do
 	gem 'pg'
