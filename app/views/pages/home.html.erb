@@ -1,9 +1,13 @@
-<div class="center hero-unit">
-	<h1>Welcome to my page</h1>
-	<p>
-		You found can found me at <%= link_to "here", "http://www.jesuslerma.com" %>
-	</p>
-	<p>
-		<%= link_to "Sing Up Now!", "#", class:"btn btn-primary btn-large" %>
-	</p>
-</div>
+<% if user_signed_in? %>
+	<h1>You're logged in!</h1>
+<% else %>
+	<div class="center hero-unit">
+		<h1>Welcome to my page</h1>
+		<p>
+			You found can found me at <%= link_to "here", "http://www.jesuslerma.com" %>
+		</p>
+		<p>
+			<%= link_to "Sing Up Now!", new_user_registration_path, class:"btn btn-primary btn-large" %>
+		</p>
+	</div>
+<% end %>
